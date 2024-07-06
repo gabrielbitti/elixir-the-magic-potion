@@ -1,25 +1,25 @@
-defmodule MeuModulo.Enum do
-    def primeiro(lista) do
-        if lenght(lista) == 0 do
-            nil
-        else
-            hd(lista)
-        end
+defmodule MyMod.Enum do
+  def first(list) do
+    if length(list) == 0 do
+      nil
+    else
+      hd(list)
     end
+  end
 end
 
 
-defmodule MeuModulo.Enum.Dois do
-    def primeiro(lista) do
-        unless lenght(lista) == 0 do
-            hd(lista)
-        end
+defmodule MyMod.Enum.Second do
+  def first(list) do
+    unless length(list) == 0 do
+      hd(list)
     end
+  end
 end
 
 
-# Usando pattern matching
-defmodule MeuModulo.Enum.Tres do
-    def primeiro([]), do: nil
-    def primeiro(lista), do: hd(lista)
+# Using pattern matching
+defmodule MyMod.Enum.Third do
+  def first([]), do: nil
+  def first(list), do: hd(list)
 end

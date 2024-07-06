@@ -1,8 +1,8 @@
-defmodule MeuModulo.Math do
-    def soma(param1, param2) do
-        param1 + param2
-    end
+defmodule MyMod.Math do
+  def sum(param_one, param_two) do
+    param_one + param_two
+  end
 
-    def zero?(0), do: true 
-    def zero?(x) when(is_integer(x)) , do: false
+  def zero?(0), do: true
+  def zero?(x) when(is_integer(x)) , do: false
 end
